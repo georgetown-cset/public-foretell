@@ -9,7 +9,7 @@ The primary purpose of the Table 2 Model is to explain how we generated the numb
 This is a report exported from Foretell on October 11, 2020. The "question id" field is the same as the "Id" field elsewhere in this document. The only fields that matter are AI (bin ranges) and AL (aggregate crowd probabilities).
 
 ### Numbered Tabs
-These tabs' names correspond to the "Id" field. There are two parts. Part II generates uses the forecast data to calculate a point estimate, and Part I combines the historical and forecast data to calculate a trend departure value.
+These tabs' names correspond to the "Id" field. There are two parts. Part II uses the forecast data to calculate a point estimate, and Part I combines the historical and forecast data to calculate a trend departure value.
 
 #### Part II 
 The point of Part II is to generate a point estimate as an input for Part I. The inputs for Part II are columns A (bins) and B (probabilities), both from the Q&A tab. From those, we create a fake data set with 100 entries (columns D & E). The fake data set simply has entries for every bin, in proportion to that bin's probability. The value of each entry is a randomly generated number within the bin range. The only figure here that matters for the rest of this analysis is the mean.
